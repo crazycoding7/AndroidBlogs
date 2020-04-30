@@ -6,7 +6,7 @@
 
 ​	坚持走到最后的人，才有未来！
 
-#### 1. 基础机制[5篇]
+#### 1. 基础机制总结[5篇]
 
-- [binder机制]([https://github.com/crazycoding7/AndroidBlogs/tree/master/android/01%E5%9F%BA%E7%A1%80%E6%9C%BA%E5%88%B6](https://github.com/crazycoding7/AndroidBlogs/tree/master/android/01基础机制))
+- [1. binder机制]([https://github.com/crazycoding7/AndroidBlogs/tree/master/android/01%E5%9F%BA%E7%A1%80%E6%9C%BA%E5%88%B6](https://github.com/crazycoding7/AndroidBlogs/tree/master/android/01基础机制))
 
