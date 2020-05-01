@@ -8,10 +8,10 @@
 
 #### 1. 基础机制总结[5篇]
 
-- [1. Android系统启动过程]()
-- [2. binder进程通信机制](https://github.com/crazycoding7/AndroidBlogs/blob/master/android/01基础机制/Binder进程通讯机制.md)
-- [3. launcher启动原理]()
-- [4. Activity启动原理]()
+- [1. Android系统启动过程](https://github.com/crazycoding7/AndroidBlogs/blob/master/android/01%E5%9F%BA%E7%A1%80%E6%9C%BA%E5%88%B6/1.Android%E7%B3%BB%E7%BB%9F%E5%90%AF%E5%8A%A8%E6%B5%81%E7%A8%8B.md)
+- [2. Binder进程通信机制](https://github.com/crazycoding7/AndroidBlogs/blob/master/android/01%E5%9F%BA%E7%A1%80%E6%9C%BA%E5%88%B6/2.Binder%E8%BF%9B%E7%A8%8B%E9%80%9A%E4%BF%A1%E6%9C%BA%E5%88%B6.md)
+- [3. Launcher启动原理](https://github.com/crazycoding7/AndroidBlogs/blob/master/android/01%E5%9F%BA%E7%A1%80%E6%9C%BA%E5%88%B6/3.launcher%E5%90%AF%E5%8A%A8%E5%8E%9F%E7%90%86.md)
+- [4. Activity启动原理](https://github.com/crazycoding7/AndroidBlogs/blob/master/android/01%E5%9F%BA%E7%A1%80%E6%9C%BA%E5%88%B6/4.Activity%E5%90%AF%E5%8A%A8%E5%8E%9F%E7%90%86.md)
 - [5. Windows加载机制]()
-- [6. view绘制流程]()
+- [6. View绘制流程]()
 
