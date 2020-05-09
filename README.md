@@ -12,6 +12,6 @@
 - [2. Binder进程通信机制](https://github.com/crazycoding7/AndroidBlogs/blob/master/android/01%E5%9F%BA%E7%A1%80%E6%9C%BA%E5%88%B6/2.Binder%E8%BF%9B%E7%A8%8B%E9%80%9A%E4%BF%A1%E6%9C%BA%E5%88%B6.md)
 - [3. Launcher启动原理](https://github.com/crazycoding7/AndroidBlogs/blob/master/android/01%E5%9F%BA%E7%A1%80%E6%9C%BA%E5%88%B6/3.Launcher%E5%90%AF%E5%8A%A8%E5%8E%9F%E7%90%86.md)
 - [4. Activity启动原理](https://github.com/crazycoding7/AndroidBlogs/blob/master/android/01%E5%9F%BA%E7%A1%80%E6%9C%BA%E5%88%B6/4.Activity%E5%90%AF%E5%8A%A8%E5%8E%9F%E7%90%86.md)
-- [5. Windows加载机制]()
-- [6. View绘制流程]()
+- [5. Windows加载机制](https://github.com/crazycoding7/AndroidBlogs/blob/master/android/01%E5%9F%BA%E7%A1%80%E6%9C%BA%E5%88%B6/5.Windows%e5%8a%a0%e8%bd%bd%e6%9c%ba%e5%88%b6.md)
+- [6. View绘制流程](https://github.com/crazycoding7/AndroidBlogs/blob/master/android/01%E5%9F%BA%E7%A1%80%E6%9C%BA%E5%88%B6/6.View%e7%bb%98%e5%88%b6%e6%b5%81%e7%a8%8b.md)
 
