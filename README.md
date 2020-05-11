@@ -19,8 +19,8 @@
 
 #### 2. 职场技能
 
-- [1. 职场-沟通-金字塔原理]([https://github.com/crazycoding7/AndroidBlogs/blob/master/%E7%9F%A5%E8%A1%8C%E5%90%88%E4%B8%80/%E8%81%8C%E5%9C%BA-%E6%B2%9F%E9%80%9A-%E9%87%91%E5%AD%97%E5%A1%94%E5%8E%9F%E7%90%86.md](https://github.com/crazycoding7/AndroidBlogs/blob/master/知行合一/职场-沟通-金字塔原理.md))
-- [2. 职场-认知-提升职场价值]([https://github.com/crazycoding7/AndroidBlogs/blob/master/%E7%9F%A5%E8%A1%8C%E5%90%88%E4%B8%80/%E8%81%8C%E5%9C%BA-%E8%AE%A4%E7%9F%A5-%E6%8F%90%E5%8D%87%E8%81%8C%E5%9C%BA%E4%BB%B7%E5%80%BC.md](https://github.com/crazycoding7/AndroidBlogs/blob/master/知行合一/职场-认知-提升职场价值.md))
+- [1. 职场-沟通-金字塔原理](https://github.com/crazycoding7/AndroidBlogs/blob/master/知行合一/职场-沟通-金字塔原理.md)
+- [2. 职场-认知-提升职场价值](https://github.com/crazycoding7/AndroidBlogs/blob/master/知行合一/职场-认知-提升职场价值.md)
 
 #### 3. 生活技能
 
