@@ -15,14 +15,16 @@
 - [5. Windows加载机制](https://github.com/crazycoding7/AndroidBlogs/blob/master/android/01%E5%9F%BA%E7%A1%80%E6%9C%BA%E5%88%B6/5.Windows%e5%8a%a0%e8%bd%bd%e6%9c%ba%e5%88%b6.md)
 - [6. View绘制流程](https://github.com/crazycoding7/AndroidBlogs/blob/master/android/01%E5%9F%BA%E7%A1%80%E6%9C%BA%E5%88%B6/6.View%e7%bb%98%e5%88%b6%e6%b5%81%e7%a8%8b.md)
 
+#### 2. Java基础
 
+- [集合]()
 
-#### 2. 职场技能
+#### 3. 职场技能
 
 - [1. 职场-沟通-金字塔原理](https://github.com/crazycoding7/AndroidBlogs/blob/master/知行合一/职场-沟通-金字塔原理.md)
 - [2. 职场-认知-提升职场价值](https://github.com/crazycoding7/AndroidBlogs/blob/master/知行合一/职场-认知-提升职场价值.md)
 
-#### 3. 生活技能
+#### 4. 生活技能
 
 - [1. 美食](https://github.com/crazycoding7/AndroidBlogs/blob/master/skills/deliciousFood.md)
 
