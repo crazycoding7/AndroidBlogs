@@ -17,7 +17,7 @@
 
 #### 2. Java基础
 
-- [集合]()
+- [1.集合](https://github.com/crazycoding7/AndroidBlogs/blob/master/android/03Java%E5%9F%BA%E7%A1%80/%E9%9B%86%E5%90%88.md)
 
 #### 3. 职场技能
 
