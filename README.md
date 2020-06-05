@@ -27,18 +27,37 @@
 - [5. Windows加载机制](https://github.com/crazycoding7/AndroidBlogs/blob/master/android/01%E5%9F%BA%E7%A1%80%E6%9C%BA%E5%88%B6/5.Windows%e5%8a%a0%e8%bd%bd%e6%9c%ba%e5%88%b6.md)
 - [6. View绘制流程](https://github.com/crazycoding7/AndroidBlogs/blob/master/android/01%E5%9F%BA%E7%A1%80%E6%9C%BA%E5%88%B6/6.View%e7%bb%98%e5%88%b6%e6%b5%81%e7%a8%8b.md)
 
-#### 2. Java基础
+#### 2. 算法和数据结构
+
+#### 3. Java基础
 
 - [1. 集合](https://github.com/crazycoding7/AndroidBlogs/blob/master/android/03Java%E5%9F%BA%E7%A1%80/%E9%9B%86%E5%90%88.md)
 - [2. JVM](https://github.com/crazycoding7/AndroidBlogs/blob/master/android/03Java%E5%9F%BA%E7%A1%80/JVM.md)
+- [3. 多线程](https://github.com/crazycoding7/AndroidBlogs/blob/master/android/03Java%E5%9F%BA%E7%A1%80/多线程.md)
+- [4. 网络安全](https://github.com/crazycoding7/AndroidBlogs/blob/master/android/03Java%E5%9F%BA%E7%A1%80/网络安全.md)
 
-#### 3. 职场技能
+#### 4. Android基础
+
+
+
+
+
+#### 5. 架构与设计
+
+
+
+#### 6. 面试题
+
+
+
+#### 7. 职场技能
 
 - [1. 职场-沟通-金字塔原理](https://github.com/crazycoding7/AndroidBlogs/blob/master/知行合一/职场-沟通-金字塔原理.md)
 - [2. 职场-认知-提升职场价值](https://github.com/crazycoding7/AndroidBlogs/blob/master/知行合一/职场-认知-提升职场价值.md)
 
-#### 4. 生活技能
+#### 8. 生活技能
 
 - [1. 美食](https://github.com/crazycoding7/AndroidBlogs/blob/master/skills/deliciousFood.md)
 
-#### 4. 感悟
+#### 9. 杂谈与感悟
+
