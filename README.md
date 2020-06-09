@@ -38,9 +38,8 @@
 
 #### 4. Android基础
 
-
-
-
+- [1. 案例分析](https://github.com/crazycoding7/AndroidBlogs/blob/master/android/04Android%E5%9F%BA%E7%A1%80/Android%E6%A1%88%E4%BE%8B%E5%88%86%E6%9E%90.md)
+- [2. 基础](https://github.com/crazycoding7/AndroidBlogs/blob/master/android/04Android%E5%9F%BA%E7%A1%80/100qaAndroid%E5%9F%BA%E7%A1%80.md)
 
 #### 5. 架构与设计
 
@@ -48,7 +47,8 @@
 
 #### 6. 面试题
 
-
+- [1. Java](https://github.com/crazycoding7/AndroidBlogs/blob/master/android/06%E9%9D%A2%E8%AF%95%E9%A2%98/AndroidQJava%E5%9F%BA%E7%A1%80.md)
+- [2. Android](https://github.com/crazycoding7/AndroidBlogs/blob/master/android/06%E9%9D%A2%E8%AF%95%E9%A2%98/AndroidQ%E5%9F%BA%E7%A1%80.md)
 
 #### 7. 职场技能
 
