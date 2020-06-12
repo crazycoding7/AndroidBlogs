@@ -127,7 +127,100 @@
 
 2. Base类实现
 
-   ...
+   ```java
+   // base activity
+   abstract class BaseActivity<out P : BasePresenter<BaseActivity<P>>> : AppCompatActivity(), IMvpView<P>,CoroutineScope{
+     	final override val presenter: P
+       init {
+           presenter = createPresenter()
+           presenter.view = this
+       }
+     	// 创建presenter实例(反射)
+     	private fun createPresenter(): P {
+           sequence {
+               var thisClass: Class<*> = this@BaseActivity.javaClass
+               while (true) {
+                   println("父类泛型:::${thisClass.genericSuperclass}")
+                   println("父类:::${thisClass.superclass}")
+                   thisClass = thisClass.superclass ?: break
+               }
+           }.first {
+               it is Class<*> && IPresenter::class.java.isAssignableFrom(it)
+           }.let {
+               return (it as Class<P>).newInstance()
+           }
+       }
+   }
+   ```
+
+   
+
+3. Dragger实现注入
+
+   ```java
+   // Login Activity
+   @Route(path = path_login_input_phone)
+   class LoginActivity : BaseActivity<ILoginPresenter>(), ILoginView {
+       /**
+        * 软键盘遮挡登录按钮处理
+        */
+       private var mSoftBottomHeight = 0
+       private lateinit var mKeyboardHelper: KeyboardHelperUtil
+   
+       override fun attachLayoutRes(): Int = R.layout.activity_login_input_phone_number
+   
+       override fun initInjector() {
+           DaggerLoginComponent.builder()
+                   .applicationComponent(getAppComponent())
+                   .loginModule(LoginModule(this))
+                   .build()
+                   .inject(this)
+       }
+   }
+   // Base Activity
+   abstract class BaseActivity<T : IBasePresenter> : RxAppCompatActivity(),
+           IBaseView {
+       private var alertDialog: Dialog? = null
+       /**
+        * 把 Presenter 提取到基类需要配合基类的 initInjector() 进行注入，如果继承这个基类则必定要提供一个 Presenter 注入方法，
+        * 该APP所有 Presenter 都是在 Module 提供注入实现，也可以选择提供另外不带 Presenter 的基类
+        */
+       @Inject
+       @JvmField
+       var mPresenter: T? = null
+       @LayoutRes
+       protected abstract fun attachLayoutRes(): Int
+       protected abstract fun initInjector()
+       protected abstract fun initViews()
+       protected abstract fun initData()
+       // 初始化    
+        override fun onCreate(savedInstanceState: Bundle?) {
+           super.onCreate(savedInstanceState)
+           setContentView(attachLayoutRes())
+           StackManageUtil.add(this)
+           initLoadingDialog()
+           initInjector()
+           initViews()
+           initData()
+       }  
+   }
+   // Module Component
+   @Module
+   class LoginModule(view: ILoginView) {
+       private val mView: ILoginView = view
+       @ActivityScope
+       @Provides
+       fun provideLoginPresenter(mainFunctionApi: IAccountFunctionApi): ILoginPresenter {
+           return LoginPresenter(mView, mainFunctionApi)
+       }
+   }
+   @ActivityScope
+   @Component(dependencies = [ApplicationComponent::class], modules = [LoginModule::class])
+   interface LoginComponent {
+       fun inject(loginActivity: LoginActivity)
+       fun inject(loginInputPwdActivity: LoginInputPwdActivity)
+   }
+   ```
 
 #### 4. MVVM
 
@@ -174,7 +267,25 @@
 
 > **[`ViewModel`](https://developer.android.google.cn/topic/libraries/architecture/viewmodel)** 对象为特定的界面组件（如 Fragment 或 Activity）提供数据，并包含数据处理业务逻辑，以与模型进行通信。例如，`ViewModel` 可以调用其他组件来加载数据，还可以转发用户请求来修改数据。`ViewModel` 不了解界面组件，因此不受配置更改（如在旋转设备时重新创建 Activity）的影响。
 
+##### 2. 优点
 
+​	可以解决mvp中的内存泄漏和数据同步复杂问题。
+
+##### 3. 缺点
+
+​	目前这种架构方式的实现方式比较不完善规范，市场没有大面积验证。
+
+
+
+#### 6. 思考
+
+> 指导原则： 分离关注点原则、KISS原则、SOLID原则。
+
+- 分层思想解决View和Model耦合问题；
+
+- 同时解决 内存泄漏(activity引用)和data sync to View复杂问题；
+
+  借鉴 旅行技术架构。
 
 
 

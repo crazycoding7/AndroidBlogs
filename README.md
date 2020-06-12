@@ -43,7 +43,7 @@
 
 #### 5. 架构与设计
 
-[1. mvc/mvp/mvvm/jepact](https://github.com/crazycoding7/AndroidBlogs/blob/master/android/05框架与设计/mvcpvm.md)
+[1. mvc/mvp/mvvm/jepact](https://github.com/crazycoding7/AndroidBlogs/blob/master/android/05%E6%9E%B6%E6%9E%84%E4%B8%8E%E8%AE%BE%E8%AE%A1/mvcpvm.md)
 
 #### 6. 面试题
 
