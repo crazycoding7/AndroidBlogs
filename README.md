@@ -45,6 +45,8 @@
 
 [1. mvc/mvp/mvvm/jepact](https://github.com/crazycoding7/AndroidBlogs/blob/master/android/05%E6%9E%B6%E6%9E%84%E4%B8%8E%E8%AE%BE%E8%AE%A1/mvcpvm.md)
 
+[2.IOC](https://github.com/crazycoding7/AndroidBlogs/blob/master/android/05%E6%9E%B6%E6%9E%84%E4%B8%8E%E8%AE%BE%E8%AE%A1/Ioc.md)
+
 #### 6. 面试题
 
 - [1. Java](https://github.com/crazycoding7/AndroidBlogs/blob/master/android/06%E9%9D%A2%E8%AF%95%E9%A2%98/AndroidQJava%E5%9F%BA%E7%A1%80.md)
