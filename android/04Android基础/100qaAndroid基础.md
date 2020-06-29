@@ -326,6 +326,8 @@
   (2)onTouchEvent(): 处理点击事件， 在dispatch方法内部调用，return false是不消费事件，并让事件往父控件方向流动，return ture是消费事件；
 
   (3)onInterceptTouchEvent() 判断是否拦截了某个事件，**只存在于ViewGroup，普通View无该方法**，在ViewGroup的dispatch内部调用。 return false是不拦截事件，允许事件向子View传递，return true是拦截事件，不在向子View传递事件。
+  
+  ![event](images/androideventhandler.jpg)
 
 #### 8. 屏幕适配
 
