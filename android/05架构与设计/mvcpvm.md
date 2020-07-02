@@ -262,7 +262,13 @@
 
 ##### 1. 工作原理
 
-<img src="images/arch_final-architecture.png" alt="mvc" style="zoom:50%;" />
+Core Ktx库：简化代码提供方便api；
+
+Liftcycle库：组件感知生命周期；
+
+LiveData库：数据分发；
+
+ViewModel：轻松启动协程请求网络。
 
 > **[`ViewModel`](https://developer.android.google.cn/topic/libraries/architecture/viewmodel)** 对象为特定的界面组件（如 Fragment 或 Activity）提供数据，并包含数据处理业务逻辑，以与模型进行通信。例如，`ViewModel` 可以调用其他组件来加载数据，还可以转发用户请求来修改数据。`ViewModel` 不了解界面组件，因此不受配置更改（如在旋转设备时重新创建 Activity）的影响。
 
@@ -273,8 +279,6 @@
 ##### 3. 缺点
 
 ​	目前这种架构方式的实现方式比较不完善规范，市场没有大面积验证。
-
-
 
 #### 6. 思考
 
@@ -301,8 +305,6 @@
 ​	Jetpact: 如上。
 
 ​	根据业务规模和研发人力用mvp和Jetpact进行框架尝试，走自己的路。
-
-
 
 
 
