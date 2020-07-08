@@ -100,7 +100,98 @@ dependencies {
 - 避免在 [`ViewModel`](https://developer.android.google.cn/reference/androidx/lifecycle/ViewModel) 中引用 `View` 或 `Activity` 上下文。如果 `ViewModel` 存在的时间比 Activity 更长（在配置更改的情况下），Activity 将泄露并且不会由垃圾回收器妥善处置。
 - 使用 [Kotlin 协程](https://developer.android.google.cn/topic/libraries/architecture/coroutines)管理长时间运行的任务和其他可以异步运行的操作。
 
-#### 5. LiveData KTX
+- 原理
+
+1. `ComponentActivity implements LifecycleOwner`接口中的`Lifecycle getLifecycle();`方法。
+
+   ```java
+     // init
+   	public ComponentActivity() {
+           Lifecycle lifecycle = getLifecycle();
+           getLifecycle().addObserver(new LifecycleEventObserver() {
+               @Override
+               public void onStateChanged(@NonNull LifecycleOwner source,
+                       @NonNull Lifecycle.Event event) {
+                   if (event == Lifecycle.Event.ON_DESTROY) {
+                       if (!isChangingConfigurations()) {
+                           getViewModelStore().clear();
+                       }
+                   }
+               }
+           });
+       }
+   
+     //2. LifecycleRegistry 初始化  
+     private final WeakReference<LifecycleOwner> mLifecycleOwner;
+   	public LifecycleRegistry(@NonNull LifecycleOwner provider) {
+     	mLifecycleOwner = new WeakReference<>(provider);
+     	mState = INITIALIZED;
+   	}
+   ```
+
+   
+
+2. 让activity生命周期与lifecycle生命周期绑定
+
+<img src="images/jetpack-lifecycle-states.png" alt="lifecycle" style="zoom:80%;" />
+
+#### 5. ViewModel KTX
+
+1. [`ViewModel`](https://developer.android.google.cn/reference/androidx/lifecycle/ViewModel) 类旨在以注重生命周期的方式存储和管理界面相关的数据。[`ViewModel`](https://developer.android.google.cn/reference/androidx/lifecycle/ViewModel) 类让数据可在发生屏幕旋转等配置更改后继续留存。
+2. 另一个问题是，界面控制器经常需要进行异步调用，这些调用可能需要一些时间才能返回结果。界面控制器需要管理这些调用，并确保系统在其销毁后清理这些调用以避免潜在的内存泄露。
+
+ViewModel KTX 库提供了一个 `viewModelScope()` 函数，可让您更轻松地从 `ViewModel` 启动[协程](https://developer.android.google.cn/kotlin/coroutines)。[`CoroutineScope`](https://kotlin.github.io/kotlinx.coroutines/kotlinx-coroutines-core/kotlinx.coroutines/-coroutine-scope/) 绑定至 `Dispatchers.Main`，并且会在清除 `ViewModel` 后自动取消。您可以使用 `viewModelScope()`，而无需为每个 `ViewModel` 创建一个新范围。
+
+```java
+dependencies {
+        implementation "androidx.lifecycle:lifecycle-viewmodel-ktx:2.2.0"
+}
+class MainViewModel : ViewModel() {
+    // Make a network request without blocking the UI thread
+    private fun makeNetworkRequest() {
+        // launch a coroutine in viewModelScope
+        viewModelScope.launch  {
+            remoteApi.slowFetch()
+            ...
+        }
+    }
+    // No need to override onCleared()
+}
+```
+
+- 原理 
+
+  1. 利用map数据结构存储viewModel，key-value：包名:viewmodel对象；
+
+  2. Activity基类ComponentActivity中初始化map(ViewModelStore)，销毁时自动clear。Activity:viewModel = 1:1关系。
+
+```java
+public class ViewModelStore {
+    private final HashMap<String, ViewModel> mMap = new HashMap<>();
+    final void put(String key, ViewModel viewModel) {
+        ViewModel oldViewModel = mMap.put(key, viewModel);
+        if (oldViewModel != null) {
+            oldViewModel.onCleared();
+        }
+    }
+    final ViewModel get(String key) {
+        return mMap.get(key);
+    }
+    Set<String> keys() {
+        return new HashSet<>(mMap.keySet());
+    }
+    public final void clear() {
+        for (ViewModel vm : mMap.values()) {
+            vm.clear();
+        }
+        mMap.clear();
+    }
+}
+```
+
+
+
+#### 6. LiveData KTX
 
 1. 介绍
 
@@ -123,9 +214,7 @@ dependencies {
    }
    ```
 
-
-
-#### 6. Room KTX
+#### 7. Room KTX
 
 ​	Room 扩展程序增加了对数据库事务的协程支持。
 
@@ -137,32 +226,18 @@ dependencies {
 @Query("SELECT * FROM Users")
 suspend fun getUsers(): List<User>
 @Query("SELECT * FROM Users")
-fun getUsers(): Flow<List<User>>
-```
-
-
-
-#### 7. ViewModel KTX
-
-ViewModel KTX 库提供了一个 `viewModelScope()` 函数，可让您更轻松地从 `ViewModel` 启动[协程](https://developer.android.google.cn/kotlin/coroutines)。[`CoroutineScope`](https://kotlin.github.io/kotlinx.coroutines/kotlinx-coroutines-core/kotlinx.coroutines/-coroutine-scope/) 绑定至 `Dispatchers.Main`，并且会在清除 `ViewModel` 后自动取消。您可以使用 `viewModelScope()`，而无需为每个 `ViewModel` 创建一个新范围。
-
-```java
-dependencies {
-        implementation "androidx.lifecycle:lifecycle-viewmodel-ktx:2.2.0"
-}
-class MainViewModel : ViewModel() {
-    // Make a network request without blocking the UI thread
-    private fun makeNetworkRequest() {
-        // launch a coroutine in viewModelScope
-        viewModelScope.launch  {
-            remoteApi.slowFetch()
-            ...
-        }
-    }
-    // No need to override onCleared()
-}
+fun getUsers(): Flow<List<User
+  
 ```
 
 #### 8. Navigation KTX
 
 ​	导航组件.
+
+
+
+- 参考
+
+[1. JetpackMvvm](https://github.com/hegaojian/JetpackMvvm)
+
+[2. Jetpack-MVVM-Best-Practice](https://github.com/KunMinX/Jetpack-MVVM-Best-Practice)

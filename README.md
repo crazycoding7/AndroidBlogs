@@ -49,9 +49,9 @@
 
 #### 5. 架构与设计
 
-- [1. mvc/mvp/mvvm/jepact](https://github.com/crazycoding7/AndroidBlogs/blob/master/android/05%E6%9E%B6%E6%9E%84%E4%B8%8E%E8%AE%BE%E8%AE%A1/mvcpvm.md)
-
-- [2.IOC](https://github.com/crazycoding7/AndroidBlogs/blob/master/android/05%E6%9E%B6%E6%9E%84%E4%B8%8E%E8%AE%BE%E8%AE%A1/Ioc.md)
+- [1. 架构区别](https://github.com/crazycoding7/AndroidBlogs/blob/master/android/05%E6%9E%B6%E6%9E%84%E4%B8%8E%E8%AE%BE%E8%AE%A1/mvcpvm.md)
+- [2. Jetpack](https://github.com/crazycoding7/AndroidBlogs/blob/master/android/05%E6%9E%B6%E6%9E%84%E4%B8%8E%E8%AE%BE%E8%AE%A1/Jetpact.md)
+- [3.IOC](https://github.com/crazycoding7/AndroidBlogs/blob/master/android/05%E6%9E%B6%E6%9E%84%E4%B8%8E%E8%AE%BE%E8%AE%A1/Ioc.md)
 
 #### 6. 面试题
 
@@ -62,6 +62,7 @@
 
 - [1. 职场-沟通-金字塔原理](https://github.com/crazycoding7/AndroidBlogs/blob/master/知行合一/职场-沟通-金字塔原理.md)
 - [2. 职场-认知-提升职场价值](https://github.com/crazycoding7/AndroidBlogs/blob/master/知行合一/职场-认知-提升职场价值.md)
+- [3. 职场-职业全能竞争力](https://github.com/crazycoding7/AndroidBlogs/blob/master/%E7%9F%A5%E8%A1%8C%E5%90%88%E4%B8%80/%E8%81%8C%E5%9C%BA-%E8%81%8C%E4%B8%9A%E5%85%A8%E8%83%BD%E7%AB%9E%E4%BA%89%E5%8A%9B.md)
 
 #### 8. 生活技能
 

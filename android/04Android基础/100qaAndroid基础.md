@@ -363,6 +363,18 @@
 
    xml直接以px为单位就像了。
 
+#### 9. 生命周期
+
+<img src="images/activity_life.png" style="zoom:60%;" />
+
+
+
+<img src="images/fragment_life.png" style="zoom:70%;" />
+
+
+
+
+
 #### 名词解释
 
 | 类名                 | 作用                                                         |
