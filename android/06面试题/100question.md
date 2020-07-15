@@ -14,17 +14,25 @@
 
 #### 2. Glide开源库的理解？
 
-优点：
+#### 3.
 
-1. 多种图片格式的缓存，适合更多的展现方式(gif、video、缩略图)；
 
-2. 生命周期集成;
 
-3. 高效处理Bitmap(bitmap的复用和主动回收，减轻系统压力)
 
-4. 高效的缓存策略，缓存的是多种规格，加载速度快且内存开销少;
 
-   
 
-​	[参考](https://muyangmin.github.io/glide-docs-cn/doc/getting-started.html)
+
+
+
+
+
+
+
+- 引用
+
+[参考1](https://github.com/yangchong211/YCBlogs)
+
+[参考2](https://juejin.im/post/5c81db916fb9a049d37fe6a1)
+
+[参考3](https://github.com/gatieme/CodingInterviews)
 
