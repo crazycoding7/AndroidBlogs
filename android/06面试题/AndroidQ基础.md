@@ -64,6 +64,8 @@
 >
 > bindService()->onCreate()->onBind()->onUnbind()->onDestroy();
 
+<img src="images/fragment_lifecycle.png" style="zoom:80%;" />
+
 1）启动Service服务
 单次：`startService() —> onCreate() —> onStartCommand()`
 多次：`startService() —> onCreate() —> onStartCommand() —> onStartCommand()`
@@ -106,9 +108,11 @@ Context数量=Activity数量+Service数量+1(Application)
 
   如果activity正好在栈顶，就会重用该实例(调用实例onNewIntent())。多次点击或新闻类app。
 
+  使用场景： 跳转按钮多次单击界面重复、
+
 - singleTask模式
 
-  如果存在，清空该实例上面的实例，并调用onNewIntent()方法。主界面或浏览器场景。
+  如果存在，清空该实例上面的实例，并调用onNewIntent()方法。场景：主界面、浏览器。
 
 - singleInstance模式
 
