@@ -18,7 +18,7 @@
 
 ​	坚持走到最后的人，才有未来！
 
-#### 1. 基础机制总结[6篇]
+#### 1. 基础机制总结[7篇]
 
 - [1. Android系统启动过程](https://github.com/crazycoding7/AndroidBlogs/blob/master/android/01%E5%9F%BA%E7%A1%80%E6%9C%BA%E5%88%B6/1.Android%E7%B3%BB%E7%BB%9F%E5%90%AF%E5%8A%A8%E6%B5%81%E7%A8%8B.md)
 - [2. Binder进程通信机制](https://github.com/crazycoding7/AndroidBlogs/blob/master/android/01%E5%9F%BA%E7%A1%80%E6%9C%BA%E5%88%B6/2.Binder%E8%BF%9B%E7%A8%8B%E9%80%9A%E4%BF%A1%E6%9C%BA%E5%88%B6.md)
@@ -26,14 +26,13 @@
 - [4. Activity启动原理](https://github.com/crazycoding7/AndroidBlogs/blob/master/android/01%E5%9F%BA%E7%A1%80%E6%9C%BA%E5%88%B6/4.Activity%E5%90%AF%E5%8A%A8%E5%8E%9F%E7%90%86.md)
 - [5. Windows加载机制](https://github.com/crazycoding7/AndroidBlogs/blob/master/android/01%E5%9F%BA%E7%A1%80%E6%9C%BA%E5%88%B6/5.Windows%e5%8a%a0%e8%bd%bd%e6%9c%ba%e5%88%b6.md)
 - [6. View绘制流程](https://github.com/crazycoding7/AndroidBlogs/blob/master/android/01%E5%9F%BA%E7%A1%80%E6%9C%BA%E5%88%B6/6.View%e7%bb%98%e5%88%b6%e6%b5%81%e7%a8%8b.md)
+- [7. Handler机制](https://github.com/crazycoding7/AndroidBlogs/blob/master/android/01%E5%9F%BA%E7%A1%80%E6%9C%BA%E5%88%B6/8.Handler%E5%8E%9F%E7%90%86.md)
 
 #### 2. 算法和数据结构
 
 - [1. 概述](https://github.com/crazycoding7/AndroidBlogs/blob/master/android/02算法和数据结构/算法和数据结构.md)
 
 - [2. 算法题1](https://github.com/crazycoding7/AndroidBlogs/blob/master/android/02算法和数据结构/算法题1.md)
-
-  
 
 #### 3. Java基础
 
@@ -47,7 +46,9 @@
 - [1. 案例分析](https://github.com/crazycoding7/AndroidBlogs/blob/master/android/04Android%E5%9F%BA%E7%A1%80/Android%E6%A1%88%E4%BE%8B%E5%88%86%E6%9E%90.md)
 - [2. 基础](https://github.com/crazycoding7/AndroidBlogs/blob/master/android/04Android%E5%9F%BA%E7%A1%80/100qaAndroid%E5%9F%BA%E7%A1%80.md)
 
-#### 5. 架构与设计
+#### 5. Android进阶
+
+#### 6. 架构与设计
 
 - [1. 架构介绍](https://github.com/crazycoding7/AndroidBlogs/blob/master/android/05%E6%9E%B6%E6%9E%84%E4%B8%8E%E8%AE%BE%E8%AE%A1/%E6%9E%B6%E6%9E%84%E5%B8%88%E4%BB%8B%E7%BB%8D.md)
 - [2. IOC](https://github.com/crazycoding7/AndroidBlogs/blob/master/android/05%E6%9E%B6%E6%9E%84%E4%B8%8E%E8%AE%BE%E8%AE%A1/Ioc.md)
@@ -57,21 +58,19 @@
 - [6. 开源Glide](https://github.com/crazycoding7/AndroidBlogs/blob/master/android/05%E6%9E%B6%E6%9E%84%E4%B8%8E%E8%AE%BE%E8%AE%A1/Glide.md)
 - [7. Framework-ActivityThread源码](https://github.com/crazycoding7/AndroidBlogs/blob/master/android/05%E6%9E%B6%E6%9E%84%E4%B8%8E%E8%AE%BE%E8%AE%A1/ActivityThread源码.md)
 
-#### 6. 面试题
+#### 7. 面试题
 
 - [1. Java](https://github.com/crazycoding7/AndroidBlogs/blob/master/android/06%E9%9D%A2%E8%AF%95%E9%A2%98/AndroidQJava%E5%9F%BA%E7%A1%80.md)
 - [2. Android](https://github.com/crazycoding7/AndroidBlogs/blob/master/android/06%E9%9D%A2%E8%AF%95%E9%A2%98/AndroidQ%E5%9F%BA%E7%A1%80.md)
 - [3.100q](https://github.com/crazycoding7/AndroidBlogs/blob/master/android/06%E9%9D%A2%E8%AF%95%E9%A2%98/100question.md)
 
-#### 7. 职场技能
+#### 8. 职场技能
 
 - [1. 职场-沟通-金字塔原理](https://github.com/crazycoding7/AndroidBlogs/blob/master/知行合一/职场-沟通-金字塔原理.md)
 - [2. 职场-认知-提升职场价值](https://github.com/crazycoding7/AndroidBlogs/blob/master/知行合一/职场-认知-提升职场价值.md)
 - [3. 职场-职业全能竞争力](https://github.com/crazycoding7/AndroidBlogs/blob/master/%E7%9F%A5%E8%A1%8C%E5%90%88%E4%B8%80/%E8%81%8C%E5%9C%BA-%E8%81%8C%E4%B8%9A%E5%85%A8%E8%83%BD%E7%AB%9E%E4%BA%89%E5%8A%9B.md)
 
-#### 8. 生活技能
+#### 9. 技能和感悟
 
 - [1. 美食](https://github.com/crazycoding7/AndroidBlogs/blob/master/skills/deliciousFood.md)
-
-#### 9. 杂谈与感悟
 

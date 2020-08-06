@@ -2,7 +2,21 @@
 
 [TOC]
 
-### 线程
+### 1. 基础机制
+
+#### 1. Binder机制
+
+​	binder是什么？来自哪里？
+
+​	传统IPC机制方式和缺点？binder原理和优势？	
+
+#### 2. Launcher启动过程
+
+​	什么是Launcher？启动过程？
+
+​	包含：linux三大进程；AMS、PMS；`<category android:name="android.intent.category.Home">`属性。
+
+### 2. 线程
 
 #### 1.  为什么Android中要设计成只能在UI线程更新UI呢？
 
@@ -32,7 +46,7 @@
 
 ​	而SurfaceView本身就自带一个Surface，使用双缓存机制，与主线程和Window窗口是分离的，容易实现子线程访问(一般出现在游戏或被动更新功能中)。
 
-### Handler
+### 3. Handler
 
 #### 1. 谈谈Handler机制？
 
@@ -185,15 +199,17 @@ Handler mThreadHandler = new Handler(handlerThread.loop); // 传入loop
 
 
 
-### View
+### 4. View
 
 #### 1. Activity、Window、View关系？
 
 
 
+### 5. 性能优化
 
 
-### 架构
+
+### 6. 架构
 
 #### 1. 说说你对软件架构的理解？
 
@@ -205,7 +221,7 @@ Handler mThreadHandler = new Handler(handlerThread.loop); // 传入loop
 
     [参考](https://zhuanlan.zhihu.com/p/66535377)
 
-### 开源
+### 7. 开源
 
 #### 1. Glide
 
