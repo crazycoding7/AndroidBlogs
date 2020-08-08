@@ -32,7 +32,7 @@
 
 - [1. 概述](https://github.com/crazycoding7/AndroidBlogs/blob/master/android/02算法和数据结构/算法和数据结构.md)
 - [2. 算法题1](https://github.com/crazycoding7/AndroidBlogs/blob/master/android/02算法和数据结构/算法题1.md)
-- [3. 排序算法]()
+- [3. 排序算法](https://github.com/crazycoding7/AndroidBlogs/blob/master/android/02%E7%AE%97%E6%B3%95%E5%92%8C%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/%E6%8E%92%E5%BA%8F%E7%AE%97%E6%B3%95.md)
 
 #### 3. Java基础
 
@@ -73,4 +73,5 @@
 #### 9. 技能和感悟
 
 - [1. 美食](https://github.com/crazycoding7/AndroidBlogs/blob/master/skills/deliciousFood.md)
+- [2. 游泳](https://github.com/crazycoding7/AndroidBlogs/blob/master/skills/%E6%B8%B8%E6%B3%B3.md)
 
