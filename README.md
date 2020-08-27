@@ -70,6 +70,7 @@
 - [1. 职场-沟通-金字塔原理](https://github.com/crazycoding7/AndroidBlogs/blob/master/知行合一/职场-沟通-金字塔原理.md)
 - [2. 职场-认知-提升职场价值](https://github.com/crazycoding7/AndroidBlogs/blob/master/知行合一/职场-认知-提升职场价值.md)
 - [3. 职场-职业全能竞争力](https://github.com/crazycoding7/AndroidBlogs/blob/master/%E7%9F%A5%E8%A1%8C%E5%90%88%E4%B8%80/%E8%81%8C%E5%9C%BA-%E8%81%8C%E4%B8%9A%E5%85%A8%E8%83%BD%E7%AB%9E%E4%BA%89%E5%8A%9B.md)
+- [4. VPS](https://github.com/crazycoding7/AndroidBlogs/blob/master/tools/vps.md)
 
 #### 9. 技能和感悟
 

@@ -84,27 +84,6 @@ curl www.google.com
 
 ![image-20190903144328942](./images/image-20190903144328942.png)
 
-
-
-```shell
-#1.查看端口
-/usr/sbin/lsof -i
-#2.临时打开防火墙
-iptables -I INPUT -p tcp --dport 8090 -j ACCEPT
-service iptables restart
-#3.下载文件
-wget -c http://sea-repo.hostwinds.net/tests/100mb.zip
-#4.硬盘大小
-df -h
-#5.查看cpu、内存
-top
-#6.路由经过网关
-traceroute -n www.google.com
-
-```
-
-
-
 - 推荐资料
 
   [CN2 GIA线路](https://www.cnblogs.com/kaishirenshi/p/11757736.html)
