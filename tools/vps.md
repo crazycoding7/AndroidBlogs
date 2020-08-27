@@ -2,7 +2,7 @@
 
 ### 1. VPS购买
 
-亲测推荐使用[hostwinds](https://www.hostwinds.com/),最便宜的一个月4.99刀(配置的时候其他付费选项都不要选，有些是linux工具和自己搭建web服务器用的)。成功结果如图：
+亲测推荐使用[hostwinds](https://www.hostwinds.com/)，**（因为访问巨慢，改为搬瓦工💥）**,最便宜的一个月4.99刀(配置的时候其他付费选项都不要选，有些是linux工具和自己搭建web服务器用的)。成功结果如图：
 
 ![howswids](./images/image-20190903143121896.png)
 
@@ -98,7 +98,20 @@ wget -c http://sea-repo.hostwinds.net/tests/100mb.zip
 df -h
 #5.查看cpu、内存
 top
-#6.
+#6.路由经过网关
+traceroute -n www.google.com
 
 ```
+
+
+
+- 推荐资料
+
+  [CN2 GIA线路](https://www.cnblogs.com/kaishirenshi/p/11757736.html)
+
+  [VPS指南-(推荐搬瓦工)](https://tlanyan.me/vps-merchant-collection/)
+
+  [搬瓦工指南](https://www.banwagong.net/)
+
+  [SS客户端下载](https://tlanyan.me/shadowsock-clients/)
 
