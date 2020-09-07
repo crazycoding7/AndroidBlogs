@@ -5,8 +5,8 @@
 #### 1. 汇总
 
 ```shell
-#1.查看端口
-/usr/sbin/lsof -i
+#1.查看端口 
+lsof -i:8080
 #2.临时打开防火墙
 iptables -I INPUT -p tcp --dport 8090 -j ACCEPT
 service iptables restart
