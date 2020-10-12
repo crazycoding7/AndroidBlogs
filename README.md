@@ -80,3 +80,5 @@
 - [1. 美食](https://github.com/crazycoding7/AndroidBlogs/blob/master/skills/deliciousFood.md)
 - [2. 游泳](https://github.com/crazycoding7/AndroidBlogs/blob/master/skills/%E6%B8%B8%E6%B3%B3.md)
 
+- [3. 世界地图](https://github.com/crazycoding7/AndroidBlogs/blob/master/skills/world_map.md)
+
