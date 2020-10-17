@@ -80,6 +80,6 @@
 - [1. 美食](https://github.com/crazycoding7/AndroidBlogs/blob/master/skills/deliciousFood.md)
 - [2. 游泳](https://github.com/crazycoding7/AndroidBlogs/blob/master/skills/%E6%B8%B8%E6%B3%B3.md)
 
-- [3. 世界地图](https://github.com/crazycoding7/AndroidBlogs/blob/master/知行合一/world_map.md)
+- [3. 世界地图](https://github.com/crazycoding7/AndroidBlogs/blob/master/知行合一/世界地图.md)
 - [4. 奢侈品品牌](https://github.com/crazycoding7/AndroidBlogs/blob/master/知行合一/top10大品牌.md)
 
