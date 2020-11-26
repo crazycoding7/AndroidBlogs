@@ -30,10 +30,14 @@
 
 #### 2. 算法和数据结构
 
-- [1. 概述](https://github.com/crazycoding7/AndroidBlogs/blob/master/android/02算法和数据结构/1算法和数据结构概述.md)
+- [1. 算法和数据结构概述](https://github.com/crazycoding7/AndroidBlogs/blob/master/android/02算法和数据结构/1算法和数据结构概述.md)
 - [2. 算法题1](https://github.com/crazycoding7/AndroidBlogs/blob/master/android/02算法和数据结构/算法题1.md)
 - [3. 排序算法](https://github.com/crazycoding7/AndroidBlogs/blob/master/android/02%E7%AE%97%E6%B3%95%E5%92%8C%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/%E6%8E%92%E5%BA%8F%E7%AE%97%E6%B3%95.md)
-- [4. 树形结构](https://github.com/crazycoding7/AndroidBlogs/blob/master/android/02%E7%AE%97%E6%B3%95%E5%92%8C%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/%E6%A0%91%E5%BD%A2%E7%BB%93%E6%9E%84.md)
+- [4. 数组和链表](https://github.com/crazycoding7/AndroidBlogs/blob/master/android/02算法和数据结构/2数组和链表.md)
+- [5. 堆栈和队列](https://github.com/crazycoding7/AndroidBlogs/blob/master/android/02算法和数据结构/3.堆栈和队列.md)
+- [6. 优先队列](https://github.com/crazycoding7/AndroidBlogs/blob/master/android/02算法和数据结构/4.优先队列.md)
+- [7. 哈希表](https://github.com/crazycoding7/AndroidBlogs/blob/master/android/02算法和数据结构/5.哈希表.md)
+- [8. 树形结构](https://github.com/crazycoding7/AndroidBlogs/blob/master/android/02算法和数据结构/6. 树形结构.md)
 
 #### 3. Java基础
 
@@ -60,6 +64,7 @@
 - [5. Jetpack](https://github.com/crazycoding7/AndroidBlogs/blob/master/android/05%E6%9E%B6%E6%9E%84%E4%B8%8E%E8%AE%BE%E8%AE%A1/Jetpact.md)
 - [6. 开源Glide](https://github.com/crazycoding7/AndroidBlogs/blob/master/android/05%E6%9E%B6%E6%9E%84%E4%B8%8E%E8%AE%BE%E8%AE%A1/Glide.md)
 - [7. Framework-ActivityThread源码](https://github.com/crazycoding7/AndroidBlogs/blob/master/android/05%E6%9E%B6%E6%9E%84%E4%B8%8E%E8%AE%BE%E8%AE%A1/ActivityThread源码.md)
+- [8. Flutter架构](https://github.com/crazycoding7/AndroidBlogs/blob/master/android/05%E6%9E%B6%E6%9E%84%E4%B8%8E%E8%AE%BE%E8%AE%A1/flutter.md)
 
 #### 7. 面试题
 
