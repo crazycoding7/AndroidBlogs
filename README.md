@@ -37,7 +37,7 @@
 - [5. 堆栈和队列](https://github.com/crazycoding7/AndroidBlogs/blob/master/android/02算法和数据结构/3.堆栈和队列.md)
 - [6. 优先队列](https://github.com/crazycoding7/AndroidBlogs/blob/master/android/02算法和数据结构/4.优先队列.md)
 - [7. 哈希表](https://github.com/crazycoding7/AndroidBlogs/blob/master/android/02算法和数据结构/5.哈希表.md)
-- [8. 树形结构](https://github.com/crazycoding7/AndroidBlogs/blob/master/android/02算法和数据结构/6. 树形结构.md)
+- [8. 树形结构](https://github.com/crazycoding7/AndroidBlogs/blob/master/android/02算法和数据结构/6.树形结构.md)
 
 #### 3. Java基础
 
