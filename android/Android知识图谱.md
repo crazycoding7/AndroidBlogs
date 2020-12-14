@@ -1,7 +1,5 @@
 ### Android知识图谱
 
-[封神之路1](https://github.com/crazycoding7/Android-MS)
-
 ![android_brain](images/android_brain.png)
 
 1. 怎样理解面向对象和面向过程？
