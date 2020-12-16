@@ -80,6 +80,8 @@
 - [3. 职场-职业全能竞争力](https://github.com/crazycoding7/AndroidBlogs/blob/master/%E7%9F%A5%E8%A1%8C%E5%90%88%E4%B8%80/%E8%81%8C%E5%9C%BA-%E8%81%8C%E4%B8%9A%E5%85%A8%E8%83%BD%E7%AB%9E%E4%BA%89%E5%8A%9B.md)
 - [4. VPS](https://github.com/crazycoding7/AndroidBlogs/blob/master/tools/vps.md)
 - [5. GFW](https://github.com/crazycoding7/AndroidBlogs/blob/master/tools/翻墙资料.md)
+- [6. 谈谈腾讯的技术价值观与技术人才修炼](https://mp.weixin.qq.com/s/Vn0eKvY5AU1DEOrxbOxABQ)
+- [7. 两位拯救谷歌的超级工程师的故事](https://mp.weixin.qq.com/s/NTT1leTSxuDKXVeZTOfKpQ)
 
 #### 9. 技能和感悟
 
