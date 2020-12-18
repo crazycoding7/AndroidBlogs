@@ -55,6 +55,8 @@
 
 - [1. 跨平台框架](https://github.com/crazycoding7/AndroidBlogs/blob/master/android/07Android%E8%BF%9B%E9%98%B6/%E8%B7%A8%E5%B9%B3%E5%8F%B0%E6%8A%80%E6%9C%AF.md)
 - [2. NDK环境配置](https://blog.csdn.net/android_cai_niao/article/details/106474705)
+- [3. APM-性能优化](https://github.com/crazycoding7/AndroidBlogs/blob/master/android/07Android%E8%BF%9B%E9%98%B6/APM-1-%E6%80%A7%E8%83%BD%E4%BC%98%E5%8C%96%E6%A6%82%E8%BF%B0.md)
+- [4. AMP-崩溃问题](https://github.com/crazycoding7/AndroidBlogs/blob/master/android/07Android%E8%BF%9B%E9%98%B6/APM-2-%E5%B4%A9%E6%BA%83%E9%97%AE%E9%A2%98.md)
 
 #### 6. 架构与设计
 

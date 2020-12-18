@@ -282,6 +282,8 @@ NDK开发、Linux系统知识和编译知识。
 
 [参考文章](https://mp.weixin.qq.com/s/g-WzYF3wWAljok1XjPoo7w?)
 
+[breadpad项目练习研究](https://github.com/AndroidAdvanceWithGeektime/Chapter01)
+
 #### 四、解决方案
 
 ##### 1. 定义崩溃验收标准
@@ -300,3 +302,109 @@ NDK开发、Linux系统知识和编译知识。
 
 
 
+#### 五、BreakPad源码研究
+
+[1. demo](https://github.com/AndroidAdvanceWithGeektime/Chapter01)
+
+[2. 源码地址](https://github.com/google/breakpad)
+
+1. 自己编译源码
+
+   翻墙下载源代码；
+
+   生成堆栈解析执行文件： `/Users/xin/Desktop/breakpad/src/processor/minidump_stackwalk`
+
+2. 生成crashlog
+
+   运行项目，生成crashlog;
+
+   执行命令(**生成可读的文件**)：`/minidump_stackwalk crashDump/***.dmp >crashLog.txt ` 
+
+   ```java
+   Operating system: Android
+                     0.0.0 Linux 4.9.148 #1 SMP PREEMPT Wed Jul 24 06:26:03 CST 2019 aarch64
+   CPU: arm64
+        8 CPUs
+   
+   GPU: UNKNOWN
+   
+   Crash reason:  SIGSEGV /SEGV_MAPERR
+   Crash address: 0x0
+   Process uptime: not available
+   
+   Thread 0 (crashed)
+    0  libcrash-lib.so + 0x650
+        x0 = 0x0000007cc7cc5460    x1 = 0x0000007ff25d5ca4
+        x2 = 0x0000007ff25d5d40    x3 = 0x0000007cc7758f98
+        x4 = 0x0000007ff25d5f60    x5 = 0x0000007cc3c77218
+        x6 = 0x0000007ff25d5af0    x7 = 0x0000007caae25adc
+        x8 = 0x0000000000000000    x9 = 0x0000000000000001
+       x10 = 0x0000000000430000   x11 = 0x0000007cc7b2d6d8
+       x12 = 0x0000007d4e121590   x13 = 0x8f68110c7404b1eb
+       x14 = 0x0000007d4e089000   x15 = 0xffffffffffffffff
+       x16 = 0x0000007cb7362fe8   x17 = 0x0000007cb736163c
+       x18 = 0x0000000000000001   x19 = 0x0000007cc7c15c00
+       x20 = 0x0000000000000000   x21 = 0x0000007cc7c15c00
+       x22 = 0x0000007ff25d5f70   x23 = 0x0000007caae98bad
+       x24 = 0x0000000000000004   x25 = 0x0000007d4e4bd5e0
+       x26 = 0x0000007cc7c15ca0   x27 = 0x0000000000000001
+       x28 = 0x0000007ff25d5ca0    fp = 0x0000007ff25d5c70
+        lr = 0x0000007cb7361674    sp = 0x0000007ff25d5c50
+        pc = 0x0000007cb7361650
+       Found by: given as instruction pointer in context
+    1  libcrash-lib.so + 0x670
+        fp = 0x0000007ff25d5ca0    lr = 0x0000007cc7a52fe4
+        sp = 0x0000007ff25d5c80    pc = 0x0000007cb7361674
+       Found by: previous frame's frame pointer
+    2  libart.so + 0x577fe0
+        fp = 0x132c090800000001    lr = 0x0000007d4e4bd5e0
+        sp = 0x0000007ff25d5cb0    pc = 0x0000007cc7a52fe4
+       Found by: previous frame's frame pointer
+    3  system@framework@boot-framework.art + 0x10744c
+        sp = 0x0000007ff25d5cc0    pc = 0x00000000706f1450
+       Found by: stack scanning
+    4  dalvik-main space (region space) (deleted) + 0x6c0904
+        sp = 0x0000007ff25d5cf8    pc = 0x00000000132c0908
+       Found by: stack scanning
+    
+   Thread 1
+    0  libc.so + 0x1f2ec
+        x0 = 0x0000007cc7c44ae8    x1 = 0x0000000000000000
+        x2 = 0x0000000000000024    x3 = 0x0000000000000000
+        x4 = 0x0000000000000000    x5 = 0x0000000000000000
+        x6 = 0x0000000000000000    x7 = 0x000000002e230bf8
+        x8 = 0x0000000000000062    x9 = 0xec34b51c15165519
+       x10 = 0x0000000000000000   x11 = 0x0000000000000001
+       x12 = 0x0000000000000002   x13 = 0x00000000000026f8
+       x14 = 0x0008bf3a10477400   x15 = 0x00001348ba1548b2
+       x16 = 0x0000007cc7b2a338   x17 = 0x0000007d4a4612d0
+       x18 = 0x0000000000000000   x19 = 0x0000007cc7c44ad8
+       x20 = 0x0000007cc1434000   x21 = 0x0000000000000024
+       x22 = 0x0000007cc7c44ae8   x23 = 0x0000007cc7c44af0
+       x24 = 0x0000007cc13ff570   x25 = 0x0000007cc13ff588
+       x26 = 0x0000000000000001   x27 = 0x0000000000000016
+       x28 = 0x0000007cc7c44a88    fp = 0x0000007cc13ff3e0
+        lr = 0x0000007cc75b6d98    sp = 0x0000007cc13ff380
+        pc = 0x0000007d4a4612ec
+       Found by: given as instruction pointer in context
+    1  libart.so + 0xdbd94
+        fp = 0x0000007cc13ff420    lr = 0x0000007cc799bfc8
+        sp = 0x0000007cc13ff3f0    pc = 0x0000007cc75b6d98
+       Found by: previous frame's frame pointer
+    2  libart.so + 0x4c0fc4
+        fp = 0x0000007cc13ff450    lr = 0x0000007cc799b530
+        sp = 0x0000007cc13ff430    pc = 0x0000007cc799bfc8
+       Found by: previous frame's frame pointer
+    ....   
+   ```
+
+3. 符号解析，可以使用 ndk 中提供的`addr2line`来根据地址进行一个符号反解的过程
+
+   ```shell
+   /Users/xin/Library/Android/sdk/ndk/21.0.6113669/toolchains/arm-linux-androideabi-4.9/prebuilt/darwin-x86_64/bin/arm-linux-androideabi-addr2line -f -C -e  /Users/xin/Desktop/libcrash-lib.so 0x650
+   
+   //输出结果如下
+   Crash()
+   ```
+
+   
