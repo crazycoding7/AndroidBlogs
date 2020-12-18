@@ -54,6 +54,7 @@
 #### 5. Android进阶
 
 - [1. 跨平台框架](https://github.com/crazycoding7/AndroidBlogs/blob/master/android/07Android%E8%BF%9B%E9%98%B6/%E8%B7%A8%E5%B9%B3%E5%8F%B0%E6%8A%80%E6%9C%AF.md)
+- [2. NDK环境配置](https://blog.csdn.net/android_cai_niao/article/details/106474705)
 
 #### 6. 架构与设计
 
