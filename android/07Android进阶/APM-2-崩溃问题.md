@@ -401,14 +401,13 @@ NDK开发、Linux系统知识和编译知识。
    ```shell
    # 出现乱码
    /Users/xin/Library/Android/sdk/ndk/21.0.6113669/toolchains/arm-linux-androideabi-4.9/prebuilt/darwin-x86_64/bin/arm-linux-androideabi-addr2line -f -C -e  /Users/xin/Desktop/libcrash-lib.so 0x650
-   //输出结果如下
+   #输出结果如下
    ??
    ??:0
-# 这样实现
-   ./aarch64-linux-android-addr2line -f -C -e /Users/alex/Downloads/Chapter01/sample/build/intermediates/cmake/debug/obj/arm64-v8a/libcrash-lib.so  0x598
-   //输出结果如下
+   # 修复  
+   aarch64-linux-android-addr2line -f -C -e /Users/xin/Chapter01/sample/build/intermediates/cmake/debug/obj/arm64-v8a/libcrash-lib.so 0x650
+   #输出结果如下  
    Crash()
-   /Users/alex/Downloads/Chapter01/sample/src/main/cpp/crash.cpp:10
+   /Users/xin/Chapter01/sample/src/main/cpp/crash.cpp:10 
    ```
-   
-   
+

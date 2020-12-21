@@ -76,7 +76,12 @@
 - [3.100](https://github.com/crazycoding7/AndroidBlogs/blob/master/android/06%E9%9D%A2%E8%AF%95%E9%A2%98/100question.md)
 - [4. 滴血100问](https://github.com/crazycoding7/AndroidBlogs/blob/master/android/mybloodquestion.md)
 
-#### 8. 职场技能
+#### 8. 操作系统
+
+- [C编译原理](https://github.com/crazycoding7/AndroidBlogs/blob/master/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/C%E7%BC%96%E8%AF%91%E5%8E%9F%E7%90%86.md)
+- [Linux常用操作手册](https://github.com/crazycoding7/AndroidBlogs/blob/master/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/Linux%E5%B8%B8%E7%94%A8%E6%93%8D%E4%BD%9C%E6%89%8B%E5%86%8C.md)
+
+#### 9. 职场技能
 
 - [1. 职场-沟通-金字塔原理](https://github.com/crazycoding7/AndroidBlogs/blob/master/知行合一/职场-沟通-金字塔原理.md)
 - [2. 职场-认知-提升职场价值](https://github.com/crazycoding7/AndroidBlogs/blob/master/知行合一/职场-认知-提升职场价值.md)
@@ -86,7 +91,7 @@
 - [6. 谈谈腾讯的技术价值观与技术人才修炼](https://mp.weixin.qq.com/s/Vn0eKvY5AU1DEOrxbOxABQ)
 - [7. 两位拯救谷歌的超级工程师的故事](https://mp.weixin.qq.com/s/NTT1leTSxuDKXVeZTOfKpQ)
 
-#### 9. 技能和感悟
+#### 10. 技能和感悟
 
 - [1. 美食](https://github.com/crazycoding7/AndroidBlogs/blob/master/skills/deliciousFood.md)
 - [2. 游泳](https://github.com/crazycoding7/AndroidBlogs/blob/master/skills/%E6%B8%B8%E6%B3%B3.md)
