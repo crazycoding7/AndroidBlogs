@@ -302,6 +302,22 @@ NDK开发、Linux系统知识和编译知识。
 
 [安全模式](https://mp.weixin.qq.com/s?__biz=MzUxMzcxMzE5Ng==&mid=2247488429&idx=1&sn=448b414a0424d06855359b3eb2ba8569&source=41#wechat_redirect)
 
+##### 4. 崩溃分析方法
+
+**信息采集：**
+
+1. 崩溃信息
+2. 系统信息
+3. 内存信息
+4. 资源信息
+5. 业务信息
+
+**分析：**
+
+1. 确认重点
+2. 查找共性
+3. 尝试复现
+
 #### 五、BreakPad源码研究
 
 [1. demo](https://github.com/AndroidAdvanceWithGeektime/Chapter01)
