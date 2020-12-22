@@ -317,3 +317,5 @@ public static void stopWatchDog() {
 
 [例子参考Chapter02](https://github.com/AndroidAdvanceWithGeektime/Chapter02)
 
+[Art hook](https://blog.csdn.net/ganyao939543405/article/details/89205821)
+
