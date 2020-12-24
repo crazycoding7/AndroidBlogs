@@ -4,7 +4,7 @@
 
 ### 一、概述
 
-##### 1. 手机内存和PC内存区别？
+#### 1. 手机内存和PC内存区别？
 
 ​	PC内存：DDR,全名 **双倍数据速率内存**。
 
@@ -66,14 +66,23 @@ Allocation Tracker 的三个缺点。
 
 #### 2. Native内存分配
 
-	1. 利用Allocation Tracker工具，不太友好。
+1. 利用Allocation Tracker工具，不太友好。
  	2. 利用[Malloc 调试](https://android.googlesource.com/platform/bionic/+/master/libc/malloc_debug/README.md)、[Malloc Hooks](https://android.googlesource.com/platform/bionic/+/master/libc/malloc_hooks/README.md)。
 
 ### 三、内存优化方向探讨
 
 #### 1. 设备分级
 
-
+```java
+// 动画设备分级展示
+if (year >= 2013) {
+    // Do advanced animation
+} else if (year >= 2010) {
+    // Do simple animation
+} else {
+    // Phone too slow, don't do any animations
+}
+```
 
 #### 2. 图片优化
 
