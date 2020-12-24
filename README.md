@@ -53,30 +53,33 @@
 
 #### 5. Android进阶
 
-- [1. 跨平台框架](https://github.com/crazycoding7/AndroidBlogs/blob/master/android/07Android%E8%BF%9B%E9%98%B6/%E8%B7%A8%E5%B9%B3%E5%8F%B0%E6%8A%80%E6%9C%AF.md)
+- [1. 跨平台框架](https://github.com/crazycoding7/AndroidBlogs/blob/master/android/05Android%E8%BF%9B%E9%98%B6/%E8%B7%A8%E5%B9%B3%E5%8F%B0%E6%8A%80%E6%9C%AF.md)
 - [2. NDK环境配置](https://blog.csdn.net/android_cai_niao/article/details/106474705)
-- [3. APM-性能优化](https://github.com/crazycoding7/AndroidBlogs/blob/master/android/07Android%E8%BF%9B%E9%98%B6/APM-1-%E6%80%A7%E8%83%BD%E4%BC%98%E5%8C%96%E6%A6%82%E8%BF%B0.md)
-- [4. AMP-崩溃问题](https://github.com/crazycoding7/AndroidBlogs/blob/master/android/07Android%E8%BF%9B%E9%98%B6/APM-2-%E5%B4%A9%E6%BA%83%E9%97%AE%E9%A2%98.md)
-- [5. ANR问题](https://github.com/crazycoding7/AndroidBlogs/blob/master/android/07Android%E8%BF%9B%E9%98%B6/AMP-3-ANR.md)
-- [6. 内存优化](https://github.com/crazycoding7/AndroidBlogs/blob/master/android/07Android%E8%BF%9B%E9%98%B6/AMP-4-%E5%86%85%E5%AD%98%E4%BC%98%E5%8C%96.md)
-- [7. Hook 技术](https://www.jianshu.com/p/4f6d20076922)
+- [3. APM-性能优化](https://github.com/crazycoding7/AndroidBlogs/blob/master/android/05Android%E8%BF%9B%E9%98%B6/APM-1-%E6%80%A7%E8%83%BD%E4%BC%98%E5%8C%96%E6%A6%82%E8%BF%B0.md)
+- [4. AMP-崩溃问题](https://github.com/crazycoding7/AndroidBlogs/blob/master/android/05Android%E8%BF%9B%E9%98%B6/APM-2-%E5%B4%A9%E6%BA%83%E9%97%AE%E9%A2%98.md)
+- [5. ANR问题](https://github.com/crazycoding7/AndroidBlogs/blob/master/android/05Android%E8%BF%9B%E9%98%B6/AMP-3-ANR.md)
+- [6. 内存优化](https://github.com/crazycoding7/AndroidBlogs/blob/master/android/05Android%E8%BF%9B%E9%98%B6/AMP-4-%E5%86%85%E5%AD%98%E4%BC%98%E5%8C%96.md)
+- [7. 卡顿优化](https://github.com/crazycoding7/AndroidBlogs/blob/master/android/05Android%E8%BF%9B%E9%98%B6/APM-5-%E5%8D%A1%E9%A1%BF%E4%BC%98%E5%8C%96.md)
+- [8. UI渲染优化](https://github.com/crazycoding7/AndroidBlogs/blob/master/android/05Android%E8%BF%9B%E9%98%B6/APM-6-UI%E6%B8%B2%E6%9F%93%E4%BC%98%E5%8C%96.md)
+- [9. 启动速度优化](https://github.com/crazycoding7/AndroidBlogs/blob/master/android/05Android%E8%BF%9B%E9%98%B6/APM-7-%E5%90%AF%E5%8A%A8%E9%80%9F%E5%BA%A6%E4%BC%98%E5%8C%96.md)
+- [10. Hook 技术](https://www.jianshu.com/p/4f6d20076922)
 
 #### 6. 架构与设计
 
-- [1. 架构介绍](https://github.com/crazycoding7/AndroidBlogs/blob/master/android/05%E6%9E%B6%E6%9E%84%E4%B8%8E%E8%AE%BE%E8%AE%A1/%E6%9E%B6%E6%9E%84%E5%B8%88%E4%BB%8B%E7%BB%8D.md)
-- [2. IOC](https://github.com/crazycoding7/AndroidBlogs/blob/master/android/05%E6%9E%B6%E6%9E%84%E4%B8%8E%E8%AE%BE%E8%AE%A1/Ioc.md)
+- [1. 架构介绍](https://github.com/crazycoding7/AndroidBlogs/blob/master/android/06%E6%9E%B6%E6%9E%84%E4%B8%8E%E8%AE%BE%E8%AE%A1/%E6%9E%B6%E6%9E%84%E5%B8%88%E4%BB%8B%E7%BB%8D.md)
+- [2. IOC](https://github.com/crazycoding7/AndroidBlogs/blob/master/android/06%E6%9E%B6%E6%9E%84%E4%B8%8E%E8%AE%BE%E8%AE%A1/Ioc.md)
 - [3. AOP]()
-- [4. Android架构](https://github.com/crazycoding7/AndroidBlogs/blob/master/android/05%E6%9E%B6%E6%9E%84%E4%B8%8E%E8%AE%BE%E8%AE%A1/mvcpvm.md)
-- [5. Jetpack](https://github.com/crazycoding7/AndroidBlogs/blob/master/android/05%E6%9E%B6%E6%9E%84%E4%B8%8E%E8%AE%BE%E8%AE%A1/Jetpact.md)
-- [6. 开源Glide](https://github.com/crazycoding7/AndroidBlogs/blob/master/android/05%E6%9E%B6%E6%9E%84%E4%B8%8E%E8%AE%BE%E8%AE%A1/Glide.md)
-- [7. Framework-ActivityThread源码](https://github.com/crazycoding7/AndroidBlogs/blob/master/android/05%E6%9E%B6%E6%9E%84%E4%B8%8E%E8%AE%BE%E8%AE%A1/ActivityThread源码.md)
-- [8. Flutter架构](https://github.com/crazycoding7/AndroidBlogs/blob/master/android/05%E6%9E%B6%E6%9E%84%E4%B8%8E%E8%AE%BE%E8%AE%A1/flutter.md)
+- [4. Android架构](https://github.com/crazycoding7/AndroidBlogs/blob/master/android/06%E6%9E%B6%E6%9E%84%E4%B8%8E%E8%AE%BE%E8%AE%A1/mvcpvm.md)
+- [5. Jetpack](https://github.com/crazycoding7/AndroidBlogs/blob/master/android/06%E6%9E%B6%E6%9E%84%E4%B8%8E%E8%AE%BE%E8%AE%A1/Jetpact.md)
+- [6. 开源Glide](https://github.com/crazycoding7/AndroidBlogs/blob/master/android/06%E6%9E%B6%E6%9E%84%E4%B8%8E%E8%AE%BE%E8%AE%A1/Glide.md)
+- [7. Framework-ActivityThread源码](https://github.com/crazycoding7/AndroidBlogs/blob/master/android/06%E6%9E%B6%E6%9E%84%E4%B8%8E%E8%AE%BE%E8%AE%A1/ActivityThread源码.md)
+- [8. Flutter架构](https://github.com/crazycoding7/AndroidBlogs/blob/master/android/06%E6%9E%B6%E6%9E%84%E4%B8%8E%E8%AE%BE%E8%AE%A1/flutter.md)
 
 #### 7. 面试题
 
-- [1. Java](https://github.com/crazycoding7/AndroidBlogs/blob/master/android/06%E9%9D%A2%E8%AF%95%E9%A2%98/AndroidQJava%E5%9F%BA%E7%A1%80.md)
-- [2. Android](https://github.com/crazycoding7/AndroidBlogs/blob/master/android/06%E9%9D%A2%E8%AF%95%E9%A2%98/AndroidQ%E5%9F%BA%E7%A1%80.md)
-- [3.100](https://github.com/crazycoding7/AndroidBlogs/blob/master/android/06%E9%9D%A2%E8%AF%95%E9%A2%98/100question.md)
+- [1. Java](https://github.com/crazycoding7/AndroidBlogs/blob/master/android/07%E9%9D%A2%E8%AF%95%E9%A2%98/AndroidQJava%E5%9F%BA%E7%A1%80.md)
+- [2. Android](https://github.com/crazycoding7/AndroidBlogs/blob/master/android/07%E9%9D%A2%E8%AF%95%E9%A2%98/AndroidQ%E5%9F%BA%E7%A1%80.md)
+- [3.100](https://github.com/crazycoding7/AndroidBlogs/blob/master/android/07%E9%9D%A2%E8%AF%95%E9%A2%98/100question.md)
 - [4. 滴血100问](https://github.com/crazycoding7/AndroidBlogs/blob/master/android/mybloodquestion.md)
 
 #### 8. 操作系统
