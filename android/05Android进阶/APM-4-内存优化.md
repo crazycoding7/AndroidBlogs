@@ -85,6 +85,51 @@ Allocation Tracker 的三个缺点。
 
 #### 4. 本地或线上内存监控
 
+
+
+### 四、LeakCanary内存泄漏原理分析
+
+> LeakCanary如何检测内存泄漏的呢？主要分为7步:
+>
+> - 1、`RefWatcher.watch()`创建了一个`KeyedWeakReference`用于去观察对象。
+> - 2、然后，在后台线程中，它会检测引用是否被清除了，并且是否没有触发GC。
+> - 3、如果引用仍然没有被清除，那么它将会把堆栈信息保存在文件系统中的.hprof文件里。
+> - 4、`HeapAnalyzerService`被开启在一个独立的进程中，并且`HeapAnalyzer`使用了`HAHA`开源库解析了指定时刻的堆栈快照文件heap dump。
+> - 5、从`heap dump`中，`HeapAnalyzer`根据一个独特的引用`key`找到了`KeyedWeakReference`，并且定位了泄露的引用。
+> - 6、`HeapAnalyzer`为了确定是否有泄露，计算了到GC Roots的最短强引用路径，然后建立了导致泄露的链式引用。
+> - 7、这个结果被传回到app进程中的`DisplayLeakService`，然后一个泄露通知便展现出来了。
+
+官方原理解释是:
+
+**在一个Activity执行完onDestroy后，将它放入到WeakReference中，然后将这个WeakReference类型的Activity的对象与ReferenceQueue关联，注意: 如果一个对象要被GC回收了，会把它引用的对象放入到ReferenceQueue中。这时候只需要在ReferenceQueue中去查找是否存在该对象，如果没有就执行一个GC，再次查找，如果还是没有，则说明该对象可能无法被回收，也就可能发生了内存泄漏，最后使用HAHA这个开源库取分析dump之后的heap内存。**
+
+**测试demo：**
+
+```java
+  // 对象
+  Object obj = new Object();
+  // 引用队列，gc回收后会放入队列
+  ReferenceQueue referenceQueue = new ReferenceQueue();
+  // 建立弱引用
+  WeakReference weakReference = new WeakReference(obj,referenceQueue);
+
+  obj = null;
+  Runtime.getRuntime().gc();
+
+  try {
+    Thread.sleep(1000);
+  } catch (InterruptedException e) {
+    e.printStackTrace();
+  }
+
+  Log.e("testme", "得到gc回收结果：" + referenceQueue.poll());
+```
+
+
+
 **参考：**
 
 [1. Allcation Tracker帮助文档](https://developer.android.com/studio/profile/memory-profiler?hl=zh-cn#performance)
+
+[2. LeakCanary学习](http://www.youkmi.cn/2020/01/01/android-xing-neng-you-hua-zhi-leakcanary-nei-cun-yuan-li-fen-xi/)
+
