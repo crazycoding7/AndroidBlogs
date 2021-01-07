@@ -449,3 +449,6 @@ sync使用简单，无序担心忘记手动解锁，加锁解锁是隐式的，�
 
   [查看](android/100qa进阶.md)   
 
+##### 27. 写一个生产者-消费者实现
+
+ [参考](https://www.cnblogs.com/yunche/p/9540561.html)
