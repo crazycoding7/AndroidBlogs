@@ -2,6 +2,91 @@
 
 [TOC]
 
+### 一、基本数据类型相关
+
+#### 1. 常量池
+
+##### a. String常量池
+
+​	[参考1](https://www.cnblogs.com/starry-skys/p/12285241.html)
+
+​	[参考2](https://blog.csdn.net/hz90s/article/details/80819619)
+
+```java
+        //创建了两个对象，一份存在字符串常量池中，一份存在堆中
+        String s = new String("aa");
+        //检查常量池中是否存在字符串aa，此处存在则直接返回
+        String s1 = s.intern();
+        String s2 = "aa";
+
+        System.out.println(s == s2);  //① 
+        System.out.println(s1 == s2); //②
+
+        String s3 = new String("b") + new String("b"); //约等于 变量b + 变量b
+        //常量池中没有bb，在jdk1.7之后会把堆中的引用放到常量池中，故引用地址相等
+        String s4 = s3.intern();
+        String s5 = "bb";
+
+        System.out.println(s3 == s5 ); //③ ！！
+        System.out.println(s4 == s5);  //④
+```
+
+
+
+##### b. Integer常量池
+
+[参考](https://www.cnblogs.com/DreamSea/archive/2011/11/20/2256396.html)
+
+```java
+ 				Integer i1 = 40;  // 常量池取对象 [-128,127]
+        Integer i2 = 40;
+        Integer i3 = 0;
+        Integer i4 = new Integer(40);
+        Integer i5 = new Integer(40);
+        Integer i6 = new Integer(0);
+
+        Integer i100 = 400;
+        Integer i200 = 400;
+
+        System.out.println("i1=i2\t" + (i1 == i2));
+        System.out.println("i1=i2+i3\t" + (i1 == i2 + i3));
+        System.out.println("i4=i5\t" + (i4 == i5));
+        System.out.println("i4=i5+i6\t" + (i4 == i5 + i6));
+
+        System.out.println(i100 == i200); // 超过常量池范围，都是new的对象。
+```
+
+##### c. int与double的转换
+
+```java
+				// 两个int类型的相计算结果为int；其中一个为double结果自动为double！
+				int t = -2 / 3;  
+        double d = -2 / 3;
+        double d1 = -2d / 3;
+
+        System.out.println(t);
+        System.out.println(d);
+        System.out.println(d1);
+        System.out.println(-2 / 3);
+        System.out.println(-7.9 / 3);
+
+        System.out.println("-----");
+
+        double[] list = {-1, -0.666, 0, 0.666, 1};
+        double xx = -2 / 3;
+        for (double temp : list) {
+            if (temp > xx) {
+                System.out.println(temp);
+            }
+        }
+```
+
+
+
+
+
+### 其它
+
 ##### 1. weakReference与softReference区别？
 
 sf: 当内存不足的时候才会被回收，多用于高速缓存防止内存溢出；

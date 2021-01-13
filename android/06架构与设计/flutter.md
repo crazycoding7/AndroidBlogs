@@ -2,6 +2,12 @@
 
 [TOC]
 
+[1. 入门书籍](https://book.flutterchina.club/)
+
+[2. Dark packages插件](https://pub.flutter-io.cn/)
+
+[3. Flutter中文网](https://flutterchina.club/using-packages/)
+
 ### 一、架构设计
 
 <img src="images/flutter_framework.jpg" alt="flutter" style="zoom:67%;" />
