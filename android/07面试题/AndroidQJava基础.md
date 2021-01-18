@@ -537,3 +537,41 @@ sync使用简单，无序担心忘记手动解锁，加锁解锁是隐式的，�
 ##### 27. 写一个生产者-消费者实现
 
  [参考](https://www.cnblogs.com/yunche/p/9540561.html)
+
+##### 28. LinkedHashMap
+
+​	利用双向链表把Entry联系起来，可以实现插入顺序遍历。内部已经实现LRU算法。
+
+```java
+// 保持最近使用的6个元素(get put是把最新的元素放在最后)
+public class LRU<K,V> extends LinkedHashMap<K,V> implements Map<K,V> {
+    public LRU(int initialCapacity,
+               float loadFactor,
+               boolean accessOrder) {
+        super(initialCapacity, loadFactor, accessOrder);
+    }
+
+    @Override
+    protected boolean removeEldestEntry(Entry<K, V> eldest) {
+        if(size() > 6){
+            return  true;
+        }
+        return  false;
+    }
+}
+
+public static void main(String[] args) {
+        // accessOrder必须为True
+        LRU<Character, Integer> lru = new LRU<>(
+                16, 0.75f, true);
+
+        String s = "abcdefghijkl";
+        for (int i = 0; i < s.length(); i++) {
+            lru.put(s.charAt(i), i);
+        }
+        System.out.println("LRU中key为h的Entry的值为： " + lru.get('h'));
+        System.out.println("LRU的大小 ：" + lru.size()); // 6
+        System.out.println("LRU ：" + lru);  // LRU ：{g=6, i=8, j=9, k=10, l=11, h=7}
+    }
+```
+
