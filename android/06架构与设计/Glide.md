@@ -123,7 +123,7 @@
 
 <img src="/Users/xin/AndroidBlogs/android/06架构与设计/images/glide_cache.png" style="zoom:80%;" />
 
-##### 多种图片格式的缓存，支持GIF、缩略图等。
+##### **多种图片格式的缓存，支持GIF、缩略图等。**
 
 - ARGB_8888 :32位图,带透明度,每个像素占4个字节
 
@@ -297,7 +297,7 @@
 
 #### 4. 如何加载大图和长图
 
-**1. 图片压缩(利用BitmapFactory.Options inSampleSize 按比例压缩)；**
+##### **1. 图片压缩(利用BitmapFactory.Options inSampleSize 按比例压缩)；**
 
 ```java
  InputStream inputStream = getAssets().open("tangyan.jpg");  
@@ -309,7 +309,7 @@
  int height = tmpOptions.outHeight; 
 ```
 
-**2. 局部显示(BitmapRegionDecoder);**
+##### **2. 局部显示(BitmapRegionDecoder);**
 
 `Android`里面是利用`BitmapRegionDecoder`来局部展示图片的，展示的是一块矩形区域。为了完成这个功能那么就需要一个方法设置图片，另一个方法设置展示的区域。
 
@@ -522,6 +522,8 @@ public class LargeImageView extends View
 3. onTouchEvent里面我们监听move的手势，在监听的回调里面去改变rect的参数，以及做边界检查，最后invalidate
 4. 在onDraw里面就是根据rect拿到bitmap，然后draw了
 
+##### **3. 降低图片质量、利用本地内存保存BitMap**
+
 
 
 - 参考
@@ -530,5 +532,7 @@ public class LargeImageView extends View
 
 [生命周期和缓存机制](https://www.cnblogs.com/billshen/p/13306285.html)
 
-[BigImageViewer](https://github.com/Piasy/BigImageViewer)
+[BigImageViewer SubsamplingScaleImageView](https://github.com/Piasy/BigImageViewer)
+
+[Android  bitmap 存储位置变迁](https://www.cnblogs.com/mingfeng002/p/11400433.html)
 
